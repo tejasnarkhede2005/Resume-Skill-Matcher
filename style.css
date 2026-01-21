@@ -5,71 +5,80 @@
 }
 
 body {
-    background: linear-gradient(135deg, #0e1117, #02040a);
+    background: #0f1115;
 }
 
+/* Compact App Navbar */
 .navbar {
     background: #161b22;
-    padding: 16px 36px;
+    padding: 12px 18px;
     border-radius: 14px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 25px;
-    animation: slideDown 0.7s ease;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.4);
 }
 
 .nav-title {
     color: #00ff9c;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
 }
 
-.nav-links button {
-    background: transparent;
+/* App Tabs */
+.nav-tabs button {
+    background: #21262d;
     border: none;
     color: #c9d1d9;
-    margin-left: 18px;
-    font-size: 15px;
+    padding: 6px 14px;
+    margin-left: 6px;
+    border-radius: 20px;
+    font-size: 13px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.25s;
 }
 
-.nav-links button:hover {
-    color: #00ff9c;
+.nav-tabs button:hover {
+    background: #00ff9c;
+    color: #000;
 }
 
+/* App Cards */
 .card {
     background: #161b22;
-    padding: 24px;
-    border-radius: 16px;
-    margin-top: 18px;
-    box-shadow: 0 0 25px rgba(0,0,0,0.4);
-    animation: fadeIn 0.5s ease;
+    padding: 18px;
+    border-radius: 18px;
+    margin-top: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+    animation: fadeIn 0.4s ease;
 }
 
+/* Score Section */
 .score {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 700;
     color: #00ff9c;
 }
 
 .badge {
-    margin-top: 10px;
+    margin-top: 6px;
     display: inline-block;
-    padding: 8px 16px;
-    border-radius: 20px;
+    padding: 6px 14px;
+    border-radius: 18px;
     background: #21262d;
     font-weight: 600;
+    font-size: 13px;
 }
 
+/* Skills Pills */
 .skill {
     display: inline-block;
     background: #21262d;
-    padding: 7px 14px;
-    margin: 6px;
-    border-radius: 20px;
-    font-size: 14px;
+    padding: 6px 12px;
+    margin: 5px;
+    border-radius: 18px;
+    font-size: 13px;
     transition: 0.3s;
 }
 
@@ -78,12 +87,7 @@ body {
     color: #000;
 }
 
-@keyframes slideDown {
-    from { transform: translateY(-25px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-}
-
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from { opacity: 0; transform: scale(0.98); }
+    to { opacity: 1; transform: scale(1); }
 }
