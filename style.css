@@ -1,0 +1,34 @@
+body {
+    background-color: #0e1117;
+}
+
+.main {
+    padding: 2rem;
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+}
+
+.card {
+    background: #161b22;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 15px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.4);
+}
+
+.match {
+    font-size: 28px;
+    font-weight: bold;
+    color: #00ff9c;
+}
+
+.skill {
+    display: inline-block;
+    background: #21262d;
+    padding: 6px 12px;
+    margin: 4px;
+    border-radius: 20px;
+    color: #c9d1d9;
+}
