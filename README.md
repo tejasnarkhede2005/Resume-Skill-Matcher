@@ -1,5 +1,6 @@
 # Resume Skill Matcher 🚀
 
+I handled ATS keyword weighting using a dictionary-based scoring system and added defensive checks to ensure stability during deployment and refactoring.
 A professional NLP-powered Streamlit application that analyzes a resume against a job description and calculates a skill match score.  
 Designed for recruiters and job seekers to quickly evaluate resume relevance.
 
