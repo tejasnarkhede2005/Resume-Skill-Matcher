@@ -4,6 +4,7 @@ I handled ATS keyword weighting using a dictionary-based scoring system and adde
 A professional NLP-powered Streamlit application that analyzes a resume against a job description and calculates a skill match score.  
 Designed for recruiters and job seekers to quickly evaluate resume relevance.
 
+Live Link : https://resume-skill-matcher-by-tejas.streamlit.app/
 ---
 ## 🏗 Architecture Flow (Mermaid Diagram)
 
