@@ -13,15 +13,14 @@ def extract_text_from_pdf(pdf):
 def extract_skills(text):
     found = set()
     for skill in SKILLS:
-        pattern = r"\b" + re.escape(skill) + r"\b"
-        if re.search(pattern, text):
+        if re.search(rf"\b{re.escape(skill)}\b", text):
             found.add(skill)
     return found
 
 def calculate_match(resume_skills, jd_skills):
     if not jd_skills:
         return 0
-    return round((len(resume_skills & jd_skills) / len(jd_skills)) * 100, 2)
+    return round(len(resume_skills & jd_skills) / len(jd_skills) * 100, 2)
 
 def score_badge(score):
     if score >= 80:
